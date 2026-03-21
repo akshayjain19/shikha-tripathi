@@ -203,7 +203,7 @@ export const Home: React.FC = () => {
       <section className="py-24 px-6 bg-brand-beige/30">
         <div className="max-w-7xl mx-auto glass rounded-[48px] overflow-hidden">
           <div className="grid lg:grid-cols-2">
-            <div className="p-12 lg:p-20">
+            <div className="p-12 lg:p-20 flex flex-col justify-center">
               <h2 className="text-4xl font-serif mb-2">Shikha Tripathi</h2>
               <p className="text-brand-accent text-sm font-semibold uppercase tracking-widest mb-8">Therapist and Mental health care provider</p>
               <div className="mb-10">
@@ -219,16 +219,16 @@ export const Home: React.FC = () => {
                 href={LINKTREE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-brand-text text-white rounded-full font-medium hover:bg-brand-text/90 transition-all"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-brand-text text-white rounded-full font-medium hover:bg-brand-text/90 transition-all w-fit"
               >
                 Book a session <ArrowRight size={20} />
               </a>
             </div>
-            <div className="relative h-[400px] lg:h-auto">
+            <div className="relative min-h-[400px] lg:min-h-0">
               <img
                 src="https://lh3.googleusercontent.com/d/1M469rJ_bx_cEZMLRwS6Tgfy3yVebSTdr"
                 alt="Shikha Tripathi"
-                className="w-full h-full object-cover"
+                className="lg:absolute lg:inset-0 w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
             </div>
