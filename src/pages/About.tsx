@@ -76,7 +76,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* Credentials Section */}
-        <div className="mb-32 bg-brand-warm-neutral -mx-6 px-6 py-20 rounded-[64px]">
+        <div className="mb-32 bg-brand-off-white -mx-6 px-6 py-20 rounded-[64px]">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-serif text-center mb-12">Credentials & Certifications</h2>
             <div className="space-y-6">
@@ -139,7 +139,7 @@ export const About: React.FC = () => {
             href={LINKTREE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-12 py-5 bg-brand-accent text-white rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
+            className="inline-flex items-center gap-3 px-12 py-5 bg-brand-blue text-white rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
           >
             Connect With Me <ArrowRight />
           </a>
