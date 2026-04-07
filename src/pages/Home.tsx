@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Sparkles, Heart, Wind, User, ShieldAlert, Baby, Users } from 'lucide-react';
+import { ArrowRight, Sparkles, Heart, Wind, User, ShieldAlert, Baby, Users, Instagram } from 'lucide-react';
+import { InstagramFeed } from '../components/InstagramFeed';
 import { LINKTREE_URL } from '../utils';
 import { Link } from 'react-router-dom';
 
@@ -108,7 +109,7 @@ export const Home: React.FC = () => {
                 href={LINKTREE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-brand-accent text-white rounded-full font-medium hover:bg-brand-accent/90 transition-all shadow-xl shadow-brand-accent/20 text-center"
+                className="px-8 py-4 bg-brand-blue text-white rounded-full font-medium hover:bg-brand-blue/90 transition-all shadow-xl shadow-brand-blue/20 text-center"
               >
                 Book Session
               </a>
@@ -123,8 +124,8 @@ export const Home: React.FC = () => {
           >
             <div className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl relative group">
               <img
-                src="https://picsum.photos/seed/serenity/800/1000"
-                alt="Calming therapy space"
+                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800&h=1000"
+                alt="Illustration of a woman meditating"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
@@ -135,7 +136,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Specialized Focus - Understanding Your Patterns */}
-      <section className="py-24 px-6 bg-white overflow-hidden">
+      <section className="py-24 px-6 bg-brand-off-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -190,7 +191,7 @@ export const Home: React.FC = () => {
               </div>
               <Link
                 to="/subconscious-pattern-healing"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-brand-accent text-white rounded-full font-medium hover:bg-brand-accent/90 transition-all shadow-lg shadow-brand-accent/20"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-brand-blue text-white rounded-full font-medium hover:bg-brand-blue/90 transition-all shadow-lg shadow-brand-blue/20"
               >
                 Learn More About Pattern Healing <ArrowRight size={20} />
               </Link>
@@ -237,16 +238,23 @@ export const Home: React.FC = () => {
       </section>
 
       {/* My Certifications - Visual Breathing Space */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-brand-off-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
             <h2 className="text-2xl font-serif text-brand-muted uppercase tracking-[0.2em] mb-12">My Certifications</h2>
-            <div className="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-              {/* Placeholder for certification logos or icons */}
-              <div className="h-12 w-32 bg-brand-beige rounded flex items-center justify-center font-serif text-xs">CERTIFICATION 1</div>
-              <div className="h-12 w-32 bg-brand-beige rounded flex items-center justify-center font-serif text-xs">CERTIFICATION 2</div>
-              <div className="h-12 w-32 bg-brand-beige rounded flex items-center justify-center font-serif text-xs">CERTIFICATION 3</div>
-              <div className="h-12 w-32 bg-brand-beige rounded flex items-center justify-center font-serif text-xs">CERTIFICATION 4</div>
+            <div className="flex flex-wrap justify-center items-center gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
+              <img 
+                src="https://www.ekaa.co.in/wp-content/uploads/2021/02/ekaa-logo-new.png" 
+                alt="EKAA Logo" 
+                className="h-16 w-auto object-contain"
+                referrerPolicy="no-referrer"
+              />
+              <img 
+                src="https://www.tassointernational.com/wp-content/uploads/2023/02/Tasso-international-white-02-e1611132874704-512-166.png" 
+                alt="Tasso International Logo" 
+                className="h-12 w-auto object-contain brightness-0"
+                referrerPolicy="no-referrer"
+              />
             </div>
           </div>
         </div>
@@ -276,7 +284,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* How Therapy Works */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-24 px-6 bg-brand-off-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif mb-8">How Therapy Works</h2>
@@ -344,7 +352,7 @@ export const Home: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="p-10 rounded-[40px] bg-white shadow-sm border border-brand-beige relative"
+                className="p-10 rounded-[40px] bg-brand-off-white shadow-sm border border-brand-beige relative"
               >
                 <p className="text-brand-text italic mb-8 leading-relaxed">"{t.text}"</p>
                 <div>
@@ -357,9 +365,12 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Instagram Feed */}
+      <InstagramFeed />
+
       {/* Closing Section - Your Journey Can Begin Here */}
       <section className="py-24 px-6">
-        <div className="max-w-5xl mx-auto text-center bg-brand-accent rounded-[64px] p-16 md:p-24 text-white relative overflow-hidden">
+        <div className="max-w-5xl mx-auto text-center bg-brand-blue rounded-[64px] p-16 md:p-24 text-white relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
             <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-[100px]" />
             <div className="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-full blur-[100px]" />
@@ -370,7 +381,7 @@ export const Home: React.FC = () => {
             href={LINKTREE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-12 py-5 bg-white text-brand-accent rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl relative z-10"
+            className="inline-block px-12 py-5 bg-white text-brand-blue rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl relative z-10"
           >
             Book Session
           </a>
