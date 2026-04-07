@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Instagram } from 'lucide-react';
 import { LINKTREE_URL } from '../utils';
 
 export const Footer: React.FC = () => {
+  const instagramUrl = "https://www.instagram.com/shiksenergy/";
+
   return (
     <footer className="bg-brand-warm-neutral py-20 px-6 border-t border-brand-beige">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
@@ -14,13 +17,14 @@ export const Footer: React.FC = () => {
             Guiding you through the depths of your subconscious to find healing, clarity, and your true self. Based in Pune, India.
           </p>
           <div className="flex gap-4">
-            {/* Social icons placeholder */}
-            <div className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-brand-accent hover:text-white transition-all cursor-pointer">
-              <span className="text-xs font-bold">IG</span>
-            </div>
-            <div className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-brand-accent hover:text-white transition-all cursor-pointer">
-              <span className="text-xs font-bold">LI</span>
-            </div>
+            <a 
+              href={instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-brand-blue hover:text-white transition-all"
+            >
+              <Instagram size={18} />
+            </a>
           </div>
         </div>
 
@@ -43,7 +47,7 @@ export const Footer: React.FC = () => {
               <p>Mon-Sat : 11 am to 9 pm</p>
               <p>Sunday : For emergencies only</p>
             </li>
-            <li className="pt-4"><a href={LINKTREE_URL} target="_blank" rel="noopener noreferrer" className="text-brand-accent font-medium">Book a Session</a></li>
+            <li className="pt-4"><a href={LINKTREE_URL} target="_blank" rel="noopener noreferrer" className="text-brand-blue font-medium">Book a Session</a></li>
           </ul>
         </div>
       </div>
