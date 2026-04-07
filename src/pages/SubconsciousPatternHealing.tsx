@@ -35,8 +35,8 @@ export const SubconsciousPatternHealing: React.FC = () => {
             <div className="relative">
               <div className="aspect-square rounded-[40px] overflow-hidden shadow-2xl">
                 <img
-                  src="https://picsum.photos/seed/subconscious/800/800"
-                  alt="Subconscious Mind Concept"
+                  src="https://foreverconscious.com/wp-content/uploads/2014/09/breaking-the-negative-patterns-of-your-subconscious-mind-660x420.png"
+                  alt="Breaking negative subconscious patterns"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -109,7 +109,7 @@ export const SubconsciousPatternHealing: React.FC = () => {
               href={LINKTREE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-12 py-5 bg-brand-accent text-white rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
+              className="inline-flex items-center gap-3 px-12 py-5 bg-brand-blue text-white rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
             >
               Book a Session <ArrowRight />
             </a>
