@@ -3,7 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>Shikha Tripathi | Regression Therapist & Psychologist</title>
+    <script>
+      // Fix for "Cannot set property fetch of #<Window> which has only a getter"
+      // This error occurs in some environments when libraries try to overwrite window.fetch
+      (function() {
+        try {
+          var win = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : self;
+          if (!win) return;
+
+          var originalFetch = win.fetch;
+          if (typeof originalFetch !== 'function') return;
+
+          // Try to redefine fetch with a setter that ignores assignments
+          // This prevents the "Cannot set property fetch" error
+          var descriptor = Object.getOwnPropertyDescriptor(win, 'fetch');
+          if (!descriptor || descriptor.configurable) {
+            Object.defineProperty(win, 'fetch', {
+              get: function() { return originalFetch; },
+              set: function(v) { 
+                console.warn('Blocking attempt to overwrite window.fetch');
+              },
+              configurable: true,
+              enumerable: true
+            });
+          } else {
+            // If not configurable on window, try on Window prototype
+            var proto = win.Window ? win.Window.prototype : null;
+            if (proto) {
+              var protoDescriptor = Object.getOwnPropertyDescriptor(proto, 'fetch');
+              if (protoDescriptor && protoDescriptor.configurable) {
+                Object.defineProperty(proto, 'fetch', {
+                  get: function() { return originalFetch; },
+                  set: function(v) { 
+                    console.warn('Blocking attempt to overwrite window.fetch via prototype');
+                  },
+                  configurable: true,
+                  enumerable: true
+                });
+              }
+            }
+          }
+        } catch (e) {
+          // Silent fail
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
