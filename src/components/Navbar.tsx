@@ -58,7 +58,7 @@ export const Navbar: React.FC = () => {
             href={LINKTREE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-2 bg-brand-blue text-white rounded-full text-sm font-medium hover:bg-brand-blue/90 transition-all shadow-md shadow-brand-blue/20"
+            className="px-6 py-2 bg-brand-accent text-white rounded-full text-sm font-medium hover:bg-brand-accent/90 transition-all shadow-md shadow-brand-accent/20"
           >
             Connect
           </a>
@@ -98,7 +98,7 @@ export const Navbar: React.FC = () => {
               href={LINKTREE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-4 bg-brand-blue text-white rounded-full text-center font-medium"
+              className="w-full py-4 bg-brand-accent text-white rounded-full text-center font-medium"
             >
               Connect
             </a>
