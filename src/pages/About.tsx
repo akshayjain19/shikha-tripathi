@@ -29,7 +29,7 @@ export const About: React.FC = () => {
           >
             <div className="aspect-[3/4] rounded-[40px] overflow-hidden shadow-2xl">
               <img
-                src="https://lh3.googleusercontent.com/d/1M469rJ_bx_cEZMLRwS6Tgfy3yVebSTdr"
+                src="https://lh3.googleusercontent.com/d/1lz2VvaPxYK0M2GiLDpn9E-LGGOd0RFWm"
                 alt="Shikha Tripathi Portrait"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -76,7 +76,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* Credentials Section */}
-        <div className="mb-32 bg-brand-off-white -mx-6 px-6 py-20 rounded-[64px]">
+        <div className="mb-32 bg-brand-primary -mx-6 px-6 py-20 rounded-[64px]">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-serif text-center mb-12">Credentials & Certifications</h2>
             <div className="space-y-6">
@@ -139,7 +139,7 @@ export const About: React.FC = () => {
             href={LINKTREE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-12 py-5 bg-brand-blue text-white rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
+            className="inline-flex items-center gap-3 px-12 py-5 bg-brand-accent text-white rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
           >
             Connect With Me <ArrowRight />
           </a>
