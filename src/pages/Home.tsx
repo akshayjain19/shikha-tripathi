@@ -109,7 +109,7 @@ export const Home: React.FC = () => {
                 href={LINKTREE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-brand-blue text-white rounded-full font-medium hover:bg-brand-blue/90 transition-all shadow-xl shadow-brand-blue/20 text-center"
+                className="px-8 py-4 bg-brand-accent text-white rounded-full font-medium hover:bg-brand-accent/90 transition-all shadow-xl shadow-brand-accent/20 text-center"
               >
                 Book Session
               </a>
@@ -124,8 +124,8 @@ export const Home: React.FC = () => {
           >
             <div className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl relative group">
               <img
-                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800&h=1000"
-                alt="Illustration of a woman meditating"
+                src="https://lh3.googleusercontent.com/d/1y9e6y17kHFh5v4ZwV9cEtwgFlOmIEV7U"
+                alt="Shikha Tripathi - Therapist"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
@@ -191,7 +191,7 @@ export const Home: React.FC = () => {
               </div>
               <Link
                 to="/subconscious-pattern-healing"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-brand-blue text-white rounded-full font-medium hover:bg-brand-blue/90 transition-all shadow-lg shadow-brand-blue/20"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-brand-accent text-white rounded-full font-medium hover:bg-brand-accent/90 transition-all shadow-lg shadow-brand-accent/20"
               >
                 Learn More About Pattern Healing <ArrowRight size={20} />
               </Link>
@@ -201,7 +201,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Meet Shikha Tripathi */}
-      <section className="py-24 px-6 bg-brand-beige/30">
+      <section className="py-24 px-6 bg-brand-accent/10">
         <div className="max-w-7xl mx-auto glass rounded-[48px] overflow-hidden">
           <div className="grid lg:grid-cols-2">
             <div className="p-12 lg:p-20 flex flex-col justify-center">
@@ -227,7 +227,7 @@ export const Home: React.FC = () => {
             </div>
             <div className="relative min-h-[400px] lg:min-h-0">
               <img
-                src="https://lh3.googleusercontent.com/d/1M469rJ_bx_cEZMLRwS6Tgfy3yVebSTdr"
+                src="https://lh3.googleusercontent.com/d/1WbdqeDiVqtBSmc3hmHxy1UgX8l6Pm2Ok"
                 alt="Shikha Tripathi"
                 className="lg:absolute lg:inset-0 w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -261,22 +261,22 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Therapies - Pathways Toward Deeper Healing */}
-      <section className="py-24 px-6 bg-brand-warm-neutral">
+      <section className="py-24 px-6 bg-brand-secondary text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">Your Pathways Toward Deeper Healing</h2>
-            <p className="text-brand-muted max-w-2xl mx-auto">A comprehensive range of therapeutic modalities designed to address the roots of your challenges.</p>
+            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Your Pathways Toward Deeper Healing</h2>
+            <p className="text-white/80 max-w-2xl mx-auto">A comprehensive range of therapeutic modalities designed to address the roots of your challenges.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, idx) => (
               <motion.div
                 key={idx}
                 whileHover={{ y: -10 }}
-                className="glass p-8 rounded-[32px] hover:shadow-xl transition-all duration-500"
+                className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-[32px] hover:shadow-xl transition-all duration-500"
               >
-                <div className="mb-6">{service.icon}</div>
-                <h3 className="text-xl font-serif mb-4">{service.title}</h3>
-                <p className="text-sm text-brand-muted leading-relaxed">{service.description}</p>
+                <div className="mb-6 text-white">{service.icon}</div>
+                <h3 className="text-xl font-serif mb-4 text-white">{service.title}</h3>
+                <p className="text-sm text-white/70 leading-relaxed">{service.description}</p>
               </motion.div>
             ))}
           </div>
@@ -336,7 +336,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Testimonials - From my client */}
-      <section className="py-24 px-6 bg-brand-beige/10">
+      <section className="py-24 px-6 bg-brand-secondary/5">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">From my client</h2>
@@ -365,23 +365,57 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Offline Client Reviews */}
+      <section className="py-24 px-6 bg-brand-primary">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif mb-6">Offline Client Reviews</h2>
+            <p className="text-brand-dark/70 max-w-2xl mx-auto">Shared with permission from my offline consultations.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              "1mmHXDKZUMpOaxQwnD1vaxWF457bAsfJh",
+              "1cXA8-MTXVOdv1fA400AfkyiMD_TkStBY",
+              "15a4Il4XhhUQzvj0_Hv_Ma2DG-R5jXvsd",
+              "1p-Ja55sXt-IWwtmDVwB3AHVw9ApE0qcT"
+            ].map((id, i) => (
+              <motion.div
+                key={id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="rounded-3xl overflow-hidden shadow-lg border border-brand-dark/5 hover:shadow-2xl transition-all duration-500 bg-white"
+              >
+                <img
+                  src={`https://lh3.googleusercontent.com/d/${id}`}
+                  alt={`Offline Review ${i + 1}`}
+                  className="w-full h-auto object-contain"
+                  referrerPolicy="no-referrer"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Instagram Feed */}
       <InstagramFeed />
 
       {/* Closing Section - Your Journey Can Begin Here */}
       <section className="py-24 px-6">
-        <div className="max-w-5xl mx-auto text-center bg-brand-blue rounded-[64px] p-16 md:p-24 text-white relative overflow-hidden">
+        <div className="max-w-5xl mx-auto text-center bg-brand-dark rounded-[64px] p-16 md:p-24 text-white relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
             <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-[100px]" />
             <div className="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-full blur-[100px]" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-serif mb-8 relative z-10">Your Journey Can Begin Here</h2>
+          <h2 className="text-4xl md:text-6xl font-serif mb-8 relative z-10 text-white">Your Journey Can Begin Here</h2>
           <p className="text-white/80 text-lg mb-12 max-w-2xl mx-auto relative z-10">When you feel ready to step toward a new way of living with greater clarity and emotional balance, new possibilities begin to unfold.</p>
           <a
             href={LINKTREE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-12 py-5 bg-white text-brand-blue rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl relative z-10"
+            className="inline-block px-12 py-5 bg-white text-brand-dark rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl relative z-10"
           >
             Book Session
           </a>
